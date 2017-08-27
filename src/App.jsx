@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 // import FaHome from 'react-icons/fa/home';
-import logo from './logo.svg';
-import Wrapper from './App.styled';
+import CloudWrapper from './components/CloudWrapper.styled';
 import Header from './Header';
-import Card from './Card';
+import Portfolio from './components/Portfolio';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import Hero from './components/Hero';
+
 
 class App extends Component {
+
   render() {
     return (
-      <Wrapper>
+      <div>
         <Header />
-        <Card />
-      </Wrapper>
+        <CloudWrapper>
+          <Portfolio />
+          <Contact />
+          <AboutMe />
+        </CloudWrapper>
+        <Hero />
+      </div>
     );
   }
 }
